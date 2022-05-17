@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "29190882511",
+    "project_id": "spaeds-a9ded",
+    "storage_bucket": "spaeds-a9ded.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29190882511:android:57a2f59c0d4a945ecb63ba",
+        "android_client_info": {
+          "package_name": "com.dhirunand.spaeds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29190882511-spjjfhn7q5ni7q4s3himco4u3it4sqv9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJFrL7JCBrFwWNzvo2LtX-m73ivq5pteM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29190882511-spjjfhn7q5ni7q4s3himco4u3it4sqv9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

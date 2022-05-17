@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.dhirunand.spaeds.FirstFragment"
+        android:label="Routine generator"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_routineFragment"
+            app:destination="@id/routineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.dhirunand.spaeds.SecondFragment"
+        android:label="Assessments"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.dhirunand.spaeds.ThirdFragment"
+        android:label="Resources"
+        tools:layout="@layout/fragment_third">
+        <action
+            android:id="@+id/action_thirdFragment_to_thirdFragment1"
+            app:destination="@id/thirdFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.dhirunand.spaeds.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/routineFragment"
+        android:name="com.dhirunand.spaeds.RoutineFragment"
+        android:label="Your Routine"
+        tools:layout="@layout/fragment_routine" />
+    <fragment
+        android:id="@+id/thirdFragment1"
+        android:name="com.dhirunand.spaeds.ThirdFragment1"
+        android:label="Choose"
+        tools:layout="@layout/fragment_third1">
+        <action
+            android:id="@+id/action_thirdFragment1_to_thirdFragment2"
+            app:destination="@id/thirdFragment2" />
+        <argument
+            android:name="data"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment2"
+        android:name="com.dhirunand.spaeds.ThirdFragment2"
+        android:label="Choose"
+        tools:layout="@layout/fragment_third2">
+        <action
+            android:id="@+id/action_thirdFragment2_to_webFragment"
+            app:destination="@id/webFragment" />
+        <argument
+            android:name="data"
+            app:argType="string" />
+        <argument
+            android:name="dataParent"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.dhirunand.spaeds.WebFragment"
+        android:label="{header}"
+        tools:layout="@layout/fragment_web">
+        <argument
+            android:name="data"
+            app:argType="string" />
+        <argument
+            android:name="header"
+            app:argType="string" />
+    </fragment>
+</navigation>
