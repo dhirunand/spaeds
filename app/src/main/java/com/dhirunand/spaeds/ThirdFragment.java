@@ -52,19 +52,19 @@ public class ThirdFragment extends Fragment {
         val.put("Data Types in Java", "https://www.javatpoint.com/java-data-types");
         val.put("Operators in Java", "https://www.javatpoint.com/operators-in-java");
         val.put("Java Keywords", "https://www.javatpoint.com/java-keywords");
-        val.put("Java Control Statements", "");
-        val.put("Java If-Else Statement", "");
-//        val.put("Java Switch Statement", "");
-//        val.put("Loops in Java", "");
-//        val.put("Java While Loop", "");
-//        val.put("Java Do-While Loop", "");
-//        val.put("Java Break Statement", "");
-//        val.put("Java OOPs Concepts", "");
-//        val.put("Java Naming Convention", "");
-//        val.put("Objects and Classes in Java", "");
-//        val.put("Method in Java", "");
-//        val.put("Constructor in Java", "");
-        val.put("Java Static Keyword", "");
+        val.put("Java Control Statements", "https://www.javatpoint.com/control-flow-in-java");
+        val.put("Java If-Else Statement", "https://www.javatpoint.com/java-if-else");
+        val.put("Java Switch Statement", "https://www.javatpoint.com/java-switch");
+        val.put("Loops in Java", "https://www.javatpoint.com/java-for-loop");
+        val.put("Java While Loop", "https://www.javatpoint.com/java-while-loop");
+        val.put("Java Do-While Loop", "https://www.javatpoint.com/java-do-while-loop");
+        val.put("Java Break Statement", "https://www.javatpoint.com/java-break");
+        val.put("Java OOPs Concepts", "https://www.javatpoint.com/java-oops-concepts");
+        val.put("Java Naming Convention", "https://www.javatpoint.com/java-naming-conventions");
+        val.put("Objects and Classes in Java", "https://www.javatpoint.com/object-and-class-in-java");
+        val.put("Method in Java", "https://www.javatpoint.com/method-in-java");
+        val.put("Constructor in Java", "https://www.javatpoint.com/java-constructor");
+        val.put("Java Static Keyword", "https://www.javatpoint.com/static-keyword-in-java");
         hmhm.put("Java", val);
 
         HashMap<String, String> val1 = new HashMap<String, String>();
@@ -81,35 +81,35 @@ public class ThirdFragment extends Fragment {
         //core subjects
         HashMap<String, HashMap<String, String>> hmhm1 = new HashMap<>();
         HashMap<String, String> val2 = new HashMap<String, String>();
-        val2.put("Types of Operating System", "");
-        val2.put("2 Process Management in OS", "");
-        val2.put("Process States", "");
-        val2.put("CPU Scheduling", "");
-        val2.put("Scheduling Algorithms", "");
-        val2.put("Synchronization", "");
-        val2.put("Critical Section", "");
-        val2.put("Semaphore", "");
-        val2.put("Counting Semaphore", "");
-        val2.put("Binary Semaphores", "");
-        val2.put("Deadlock", "");
-        val2.put("Deadlock Prevention", "");
-        val2.put("Deadlock Avoidance", "");
-        val2.put("Memory Management", "");
-        val2.put("Paging", "");
-        val2.put("Physical and Logical Address", "");
-        val2.put("Paging Table", "");
-        val2.put("Virtual Memory", "");
-        val2.put("Demand Paging", "");
-        val2.put("Page Replacement", "");
-        val2.put("Belady's Anomaly", "");
+        val2.put("Types of Operating System", "https://www.javatpoint.com/types-of-operating-systems");
+        val2.put("Process Management in OS", "https://www.javatpoint.com/process-management-in-os");
+        val2.put("Process States", "https://www.javatpoint.com/os-process-states");
+        val2.put("CPU Scheduling", "https://www.javatpoint.com/os-cpu-scheduling");
+        val2.put("Scheduling Algorithms", "https://www.javatpoint.com/os-scheduling-algorithms");
+        val2.put("Synchronization", "https://www.javatpoint.com/os-process-synchronization-introduction");
+        val2.put("Critical Section", "https://www.javatpoint.com/os-critical-section-problem");
+        val2.put("Semaphore", "https://www.javatpoint.com/os-semaphore-introduction");
+        val2.put("Counting Semaphore", "https://www.javatpoint.com/os-counting-semaphore");
+        val2.put("Binary Semaphores", "https://www.javatpoint.com/os-binary-semaphore-or-mutex");
+        val2.put("Deadlock", "https://www.javatpoint.com/os-deadlocks-introduction");
+        val2.put("Deadlock Prevention", "https://www.javatpoint.com/os-deadlock-prevention");
+        val2.put("Deadlock Avoidance", "https://www.javatpoint.com/os-deadlock-avoidance");
+        val2.put("Memory Management", "https://www.javatpoint.com/os-memory-management-introduction");
+        val2.put("Paging", "https://www.javatpoint.com/os-need-for-paging");
+        val2.put("Physical and Logical Address", "https://www.javatpoint.com/os-physical-and-logical-address-space");
+        val2.put("Paging Table", "https://www.javatpoint.com/os-page-table");
+        val2.put("Virtual Memory", "https://www.javatpoint.com/os-virtual-memory");
+        val2.put("Demand Paging", "https://www.javatpoint.com/os-demand-paging");
+        val2.put("Page Replacement", "https://www.javatpoint.com/os-page-replacement-algorithms");
+        val2.put("Belady's Anomaly", "https://www.javatpoint.com/os-beladys-anamoly");
 
         hmhm1.put("OS", val2);
 
         HashMap<String, String> val3 = new HashMap<String, String>();
-        val3.put("String", "https://jhggfhdgf");
-        val3.put("OOPS", "https://jhgjgg");
-        val3.put("STL", "https://jbddvh");
-        val3.put("Virtual Classes", "https://vhfhfgh");
+        val3.put("String", "https://www.javatpoint.com/java-string");
+        val3.put("OOPS", "https://www.javatpoint.com/java-oops-concepts");
+        val3.put("STL", "https://www.javatpoint.com/cpp-stl-components");
+        val3.put("Virtual Classes", "https://www.javatpoint.com/virtual-function-in-java#:~:text=A%20virtual%20function%20or%20virtual,signature%20to%20achieve%20the%20polymorphism.");
         hmhm1.put("Computer Networking", val3);
 
         hmhmhm.put("Core Subjects", hmhm1);
@@ -127,10 +127,26 @@ public class ThirdFragment extends Fragment {
         hmhmhm.put("DSA & Algoriths", hmhm);
 
 
+        //DBMS
+        HashMap<String, HashMap<String, String>> hmhm2 = new HashMap<>();
+       /* HashMap<String, String> val4 = new HashMap<String, String>();
+        val.put("What is java", "https://www.javatpoint.com/java-tutorial");
+
+        hmhm2.put("DBMS", val4);
+
+        */
+        hmhmhm.put("DBMS", hmhm2);
 
 
+        //Science
+        HashMap<String, HashMap<String, String>> hmhm3 = new HashMap<>();
 
+        hmhmhm.put("Science", hmhm3);
 
+        //Mathematics
+        HashMap<String, HashMap<String, String>> hmhm4 = new HashMap<>();
+
+        hmhmhm.put("Mathematics", hmhm4);
 
 
 //        ahmhm.add(new HashMap<String, HashMap<String, String>>().put("Prog. lang", val));
