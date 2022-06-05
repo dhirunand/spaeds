@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -30,6 +31,7 @@ public class SecondFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
 
+        binding.textviewSecond.setOnClickListener(view1 -> Toast.makeText(requireContext(), "Text Copied", Toast.LENGTH_SHORT).show());
     }
 
     @Override

@@ -44,8 +44,35 @@ public class RoutineFragment extends Fragment {
 //        Log.v("Dhirua RotineFragment", routineGenSubjectEntityList.toString());
 //        hour
         List<RoutineListEntity> routineListEntityList = new ArrayList<>();
-        for (int i = 0; i < routineGenSubjectEntityList.size(); i++) {
-            routineListEntityList.add(new RoutineListEntity(routineGenSubjectEntityList.get(i).getTextInputEditTextString(), "5:00 - 8:00 AM", false));
+//        for (int i = 0; i < routineGenSubjectEntityList.size(); i++) {
+//            routineListEntityList.add(new RoutineListEntity(routineGenSubjectEntityList.get(i).getTextInputEditTextString(), "5:00 - 8:00 AM", false));
+//        }
+
+
+        int max_hour=hour;
+        int mh=(max_hour*60);
+        int no_of_subjects=routineGenSubjectEntityList.size();
+        //HashMap<String,Integer> ratings=new HashMap<>();
+        int[] ratings=new int[no_of_subjects];
+        int total=0;
+        for(int i=0;i<no_of_subjects;i++) {
+            ratings[i]=6-routineGenSubjectEntityList.get(i).getRatingBarInt();
+            total+=ratings[i];
+        }
+
+//        System.out.println(total);
+        double[] hours=new double[no_of_subjects];
+        for(int i=0;i<no_of_subjects;i++) {
+            double x=(ratings[i]*mh);
+            hours[i]=(x/total);
+        }
+        for(int i=0;i<hours.length;i++) {
+            int t=(int)hours[i];
+            int hr=t/60;
+            t%=60;
+            int min=t;
+//            System.out.println("subject:"+(i+1)+" time:"+hr+"hours "+min+"minutes");
+            routineListEntityList.add(new RoutineListEntity(routineGenSubjectEntityList.get(i).getTextInputEditTextString(), " time:"+hr+"hours "+min+"minutes", false));
         }
 
 //        routineListEntityList.add(new RoutineListEntity("Algorithm", "5:00 - 7:00 AM", false));

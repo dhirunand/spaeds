@@ -5,6 +5,7 @@ import static com.dhirunand.spaeds.CommonFunctions.userGetEmail;
 import static com.dhirunand.spaeds.CommonFunctions.userGetPhoneNumber;
 import static com.dhirunand.spaeds.CommonFunctions.userGetPhotoUrl;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -47,6 +48,8 @@ public class ProfileFragment extends Fragment {
                 .into(binding.profileImage);
 
         Log.v("userGetPhotoUrl", CommonFunctions.APNAGHAROWNERSHAREDPREF.getString(userGetPhotoUrl, "https://i.pravatar.cc/300"));
+
+        binding.button2.setOnClickListener(view -> startActivity(new Intent(requireActivity(), RegistrationActivity.class)));
 
         return binding.getRoot();
     }

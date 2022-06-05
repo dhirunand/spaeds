@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -57,6 +58,10 @@ public class FirstFragment extends Fragment {
         Log.v("Dhirua", routineGenSubjectEntityList.toString());
 
         binding.submit2.setOnClickListener(view -> {
+            if(routineGenSubjectEntityList.get(0).getTextInputEditTextString().matches("")) {
+                Toast.makeText(requireContext(), "Empty Subject name", Toast.LENGTH_SHORT).show();
+                return;
+            }
             Log.v("Dhirua onClick", routineGenSubjectEntityList.toString());
             NavHostFragment.findNavController(FirstFragment.this).navigate(R.id.action_FirstFragment_to_routineFragment);
         });
